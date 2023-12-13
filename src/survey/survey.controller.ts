@@ -16,7 +16,10 @@ export class SurveyController {
   constructor(private readonly surveyService: SurveyService) {}
 
   @Post()
-  async create(@Body(new ValidationPipe()) createSurveyDto: CreateSurveyDto) {
+  async create(
+    @Body(new ValidationPipe())
+    createSurveyDto: Record<string, string> & CreateSurveyDto,
+  ) {
     return this.surveyService.create(createSurveyDto);
   }
 
@@ -30,6 +33,6 @@ export class SurveyController {
     @Param('id') id: string,
     @Body() updateSurveyDto: UpdateSurveyDto,
   ) {
-    return this.surveyService.update(+id, updateSurveyDto);
+    return this.surveyService.update(id, updateSurveyDto);
   }
 }
