@@ -31,5 +31,5 @@ export class CreateSurveyDto {
   @IsEmpty({
     message: 'updated_at is auto generated',
   })
-  updated_at: string;
+  updated_at: number;
 }
