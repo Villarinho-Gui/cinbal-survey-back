@@ -15,9 +15,70 @@ export class CreateSurveyDto {
   })
   id: string;
 
+  @IsNotEmpty({
+    message: 'id is auto generated',
+  })
+  setor: string;
+
   @IsNotEmpty()
   @IsString()
-  average: string;
+  pergunta1: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta2: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta3: string;
+
+  @IsNotEmpty()
+  @IsString()
+  pergunta4: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta5: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta6: string;
+
+  @IsNotEmpty()
+  @IsString()
+  pergunta7: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta8: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta9: string;
+
+  @IsNotEmpty()
+  @IsString()
+  pergunta10: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta11: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta12: string;
+
+  @IsNotEmpty()
+  @IsString()
+  pergunta13: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta14: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta15: string;
 
   @IsNumber()
   @IsOptional()
@@ -25,11 +86,10 @@ export class CreateSurveyDto {
     message: 'created_at is auto generated',
   })
   created_at: number;
-
   @IsNumber()
   @IsOptional()
   @IsEmpty({
-    message: 'updated_at is auto generated',
+    message: 'created_at is auto generated',
   })
   updated_at: number;
 }
