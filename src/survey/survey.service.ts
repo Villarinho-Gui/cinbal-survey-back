@@ -36,6 +36,11 @@ export class SurveyService {
     try {
       const sheet = this.doc.sheetsByIndex[0];
       const surveyRows = await sheet.getRows();
+
+      if (surveyRows.length <= 0) {
+        return [];
+      }
+
       return this.transformRows(surveyRows);
     } catch (error) {
       throw new HttpException(
