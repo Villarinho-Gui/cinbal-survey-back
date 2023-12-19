@@ -80,6 +80,110 @@ export class CreateSurveyDto {
   @IsNotEmpty()
   pergunta15: string;
 
+  @IsString()
+  @IsNotEmpty()
+  pergunta16: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta17: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta18: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta19: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta20: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta21: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta22: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta23: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta24: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta25: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta26: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta27: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta28: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta29: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta30: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta31: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta32: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta33: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta34: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta35: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta36: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta37: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta38: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta39: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta40: string;
+
+  @IsString()
+  @IsNotEmpty()
+  pergunta41: string;
+
   @IsNumber()
   @IsOptional()
   @IsEmpty({
