@@ -15,9 +15,8 @@ export class CreateSurveyDto {
   })
   id: string;
 
-  @IsNotEmpty({
-    message: 'id is auto generated',
-  })
+  @IsString()
+  @IsNotEmpty()
   setor: string;
 
   @IsNotEmpty()
