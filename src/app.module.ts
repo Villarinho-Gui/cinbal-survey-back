@@ -4,14 +4,14 @@ import { GoogleSpreadsheetModule } from './google-spreadsheet/google-spreadsheet
 import { SurveyModule } from './survey/survey.module';
 
 @Module({
-  imports: [
-    ConfigModule.forRoot({
-      isGlobal: true,
-    }),
-    GoogleSpreadsheetModule,
-    SurveyModule,
-  ],
-  controllers: [],
-  providers: [],
+    imports: [
+        ConfigModule.forRoot({
+            isGlobal: true,
+        }),
+        GoogleSpreadsheetModule,
+        SurveyModule,
+    ],
+    controllers: [],
+    providers: [],
 })
 export class AppModule {}

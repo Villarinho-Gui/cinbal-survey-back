@@ -4,8 +4,8 @@ import { SurveyController } from './survey.controller';
 import { GoogleSpreadsheetModule } from '../google-spreadsheet/google-spreadsheet.module';
 
 @Module({
-  imports: [GoogleSpreadsheetModule],
-  controllers: [SurveyController],
-  providers: [SurveyService],
+    imports: [GoogleSpreadsheetModule],
+    controllers: [SurveyController],
+    providers: [SurveyService],
 })
 export class SurveyModule {}
